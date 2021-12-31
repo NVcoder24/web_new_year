@@ -111,17 +111,17 @@
   </div>
   <div class="bg"></div>
   <script>
-    $(".data").click(function() {
-      party.confetti(document.querySelector(".data"), {
-        count: party.variation.range(100, 140),
-      });
-    });
-
     function celebration() {
       console.log("Happy New Year!!!");
       $(".data").html('<h1 class="title">С новым годом!</h1>');
       party.confetti(document.querySelector(".data"), {
         count: party.variation.range(100, 140),
+      });
+
+      $(".data").click(function() {
+        party.confetti(document.querySelector(".data"), {
+          count: party.variation.range(100, 140),
+        });
       });
     }
 
